@@ -1,0 +1,129 @@
+{
+  "name": "arrowless-shortcuts",
+  "displayName": "Arrowless Shortcuts",
+  "description": "Shortcuts to replace distant keys, helping to reduce finger movement.",
+  "version": "0.1.0",
+  "icon": "icon.jpg",
+  "publisher": "flocloud",
+  "homepage": "https://github.com/flocloud/vscode-arrowless-shortcuts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flocloud/vscode-arrowless-shortcuts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/flocloud/vscode-arrowless-shortcuts/issues"
+  },
+  "engines": {
+    "vscode": "^1.8.0"
+  },
+  "categories": [
+    "Keymaps"
+  ],
+  "keywords": [
+    "shortcuts",
+    "keybindings",
+    "keymaps"
+  ],
+  "contributes": {
+    "keybindings": [
+      {
+        "command": "editor.action.deleteLines",
+        "key": "ctrl+u",
+        "when": "textInputFocus && !editorReadonly"
+      },
+      {
+        "command": "cursorLeftSelect",
+        "key": "ctrl+shift+b",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "cursorRightSelect",
+        "key": "ctrl+shift+f",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "cursorUpSelect",
+        "key": "ctrl+shift+p",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "cursorDownSelect",
+        "key": "ctrl+shift+n",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "editor.action.moveLinesUpAction",
+        "key": "ctrl+alt+p",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "command": "editor.action.moveLinesDownAction",
+        "key": "ctrl+alt+n",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "command": "cursorWordLeft",
+        "key": "alt+b",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "cursorWordRight",
+        "key": "alt+f",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "deleteWordLeft",
+        "key": "alt+h",
+        "when": "textInputFocus && !editorReadonly"
+      },
+      {
+        "command": "deleteWordRight",
+        "key": "alt+d",
+        "when": "textInputFocus && !editorReadonly"
+      },
+      {
+        "command": "cursorPageUp",
+        "key": "alt+p",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "cursorPageDown",
+        "key": "alt+n",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "cursorTop",
+        "key": "alt+a",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "cursorBottom",
+        "key": "alt+e",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "alt+c",
+        "command": "editor.action.transformToTitlecase"
+      },
+      {
+        "key": "alt+l",
+        "command": "editor.action.transformToLowercase"
+      },
+      {
+        "key": "alt+u",
+        "command": "editor.action.transformToUppercase"
+      },
+      {
+        "command": "cursorWordLeftSelect",
+        "key": "alt+shift+b",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "alt+shift+f",
+        "command": "cursorWordRightSelect",
+        "when": "textInputFocus"
+      }
+    ]
+  }
+}
